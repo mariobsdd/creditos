@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View del cliente</title>
+</head>
+<body>
+
+	<form action="/credito/cliente" method="post">
+		{% csrf_token %}
+		<ul>
+			{{form.as_ul}}
+		</ul>
+		
+		<input type="submit" name="submit" value="Crear Cliente">
+	</form>
+
+</body>
+</html>
